@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Suranna&display=swap"
+      rel="stylesheet" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <title>Weather Forecast</title>
+</head>
+<body>
+  <div class="container-sm">
+ 
+  <br /> 
+  <br /> 
+ <!--Search Engine Code Below--> 
+  <form>
+    <input type="text" placeholder="Change City" class="form-control" id=city-search-field /> 
+    <input type="submit" value="Search City" id =city-search-button>
+    <input type="submit" value="Current Location" id=current-location-button>
+  </form>
+  <br /> 
+<!--Current City Weather Code Below--> 
+  <h1>SUN, AUG 8</h1>
+  <ul>
+    <li id= "city-name">
+      New York
+    </li>
+    <li id="description"> 
+      Light Rain
+    </li>
+    <li id="current-temperature"> 
+      76 <span class="degrees-symbol">°</span> 
+      <span class="conversion-feature">
+            <a href="" id="fahrenheit">℉</a> |
+            <a href="" id="celsius">℃</a> 
+      </span>
+    </li>
+    <li id="feels-like">
+      Feels like <span id="feels-like-temp">72</span>°
+    </li>
+  </ul>
+   <br />
+  
+   <h2>Current Weather Detail</h2>
+  <ul id = "advanced-detail">
+    <li id="humidity">
+      HUMIDITY (%):
+    </li>
+    <li id="precipitation">
+      PRECIP PROB (%):
+    </li>
+    <li id="wind-speed">
+      WIND SPEED (mph)):
+    </li>
+  </ul>
+
+  <!--Weather Forecast Code Below--> 
+  <table class="table table-borderless">
+    <thead>
+      <tr>
+        <th scope="col" class="weekdays">MON</th>
+        <th scope="col" class="weekdays">TUES</th>
+        <th scope="col" class="weekdays">WED</th>
+        <th scope="col" class="weekdays">THURS</th>
+        <th scope="col" class="weekdays">FRI</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr class="forecast-icons">
+        <td>☀️</td>
+        <td>☀️</td>
+        <td>☔️</td>
+        <td>☔️</td>
+        <td>☔️</td>    
+      </tr>
+
+      <tr class="high-temp">
+        <td><span class="high-temp">84</span>° <span class="low-temp">76</span>°</td>
+        <td><span class="high-temp">84</span>° <span class="low-temp">76</span>°</td>
+        <td><span class="high-temp">84</span>° <span class="low-temp">76</span>°</td>
+        <td><span class="high-temp">84</span>° <span class="low-temp">76</span>°</td>
+        <td><span class="high-temp">84</span>° <span class="low-temp">76</span>°</td>         
+      </tr>
+
+      
+    </tbody>
+  </table>
+
+
+  <!--Footer of Page Code Below--> 
+    <div id="coder-signature">
+      <a href="">Open Source Code</a>
+        by
+      <a href="https://www.linkedin.com/in/marilyn-rosales/">Marilyn Rosales</a>
+    <br />
+    </div>
+  </div>
+  <!--Link to JS Code--> 
+  <script src="src/index.js"></script>
+</body>
+</html>

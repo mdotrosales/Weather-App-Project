@@ -18,55 +18,61 @@
   <title>Weather Forecast</title>
 </head>
 <body>
-  <div class="container-sm">
- 
+  <div class="container-sm" id="entire-page-container">
   <br /> 
   <br /> 
  <!--Search Engine Code Below--> 
-  <form>
-    <input type="text" placeholder="Change City" class="form-control" id=city-search-field /> 
-    <input type="submit" value="Search City" id =city-search-button>
-    <input type="submit" value="Current Location" id=current-location-button>
-  </form>
+
+      <form>
+        <input type="text" placeholder="Search City" class="form-control" autofocus id=city-search-field /> 
+        <br /> 
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <input type="submit" class="btn btn-light" value="Search" id =city-search-button>
+          <input type="submit" class="btn btn-light" value="Current Location" id=current-location-button>
+        </div> 
+      </form>
   <br /> 
 <!--Current City Weather Code Below--> 
   <h1>SUN, AUG 8</h1>
-  <ul>
-    <li id= "city-name">
+    <ul>
+      <li id= "city-name">
       New York
-    </li>
-    <li id="description"> 
+      </li>
+      <li id="description"> 
       Light Rain
-    </li>
-    <li id="current-temperature"> 
+      </li>
+      <li id="current-temperature"> 
       76 <span class="degrees-symbol">°</span> 
       <span class="conversion-feature">
-            <a href="" id="fahrenheit">℉</a> |
-            <a href="" id="celsius">℃</a> 
-    </span>
-    </li>
-    
-    <li id="feels-like">
+        <a href="" id="fahrenheit">℉</a> |
+        <a href="" id="celsius">℃</a> 
+      </span>
+      </li>
+      <li id="feels-like">
       Feels like <span id="feels-like-temp">72</span>°
-    </li>
-  </ul>
+      </li>
+    </ul>
    <br />
+    
+
   
-   <h2>WEATHER DETAIL:</h2>
-  <ul id = "additional-detail">
-    <li id="humidity">
-      Humidity (%):
-    </li>
-    <li id="precipitation">
-      Preciptation Prob (%):
-    </li>
-    <li id="wind-speed">
-      Wind Speed (mph):
-    </li>
-  </ul>
+  <h2>Weather Detail:</h2>
+    <ul id = "additional-detail">
+      <li id="humidity">
+      HUMIDITY (%):
+      </li>
+      <li id="precipitation">
+      PRECIP PROB (%):
+      </li>
+      <li id="wind-speed">
+      WIND SPD (mph):
+      </li>
+      </ul>
+  
+  
 
   <!--Weather Forecast Code Below--> 
-  <table class="table table-borderless">
+  <table class="table-sm table-borderless">
     <thead>
       <tr>
         <th scope="col" class="weekdays">MON</th>
@@ -106,6 +112,7 @@
       <a href="https://www.linkedin.com/in/marilyn-rosales/"  class="footer-detail">Marilyn Rosales</a>
     <br />
     </div>
+
   </div>
   <!--Link to JS Code--> 
   <script src="src/index.js"></script>
